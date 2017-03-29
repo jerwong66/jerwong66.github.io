@@ -1,0 +1,133 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Jeremy Wong - Communications Designer</title>
+        <meta name="description" content="Hi, I'm Jeremy - A marketing communications designer in Vancouver, BC. I'm a visual strategist with a knack for solving problems to add value for your brand.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/octopus.css">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+        <div class="wrap">
+          <div class="header">
+        <a class="reset" href=""><img class="logo" src="projects/img/logo.svg" alt="jerwong logo" width=91px height=50px></a>
+
+        <div id="nav-icon3grey">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav class="navmenu hide">
+          <ul>
+                <li><a href="projects/">Work</a></li>
+                <li><a class="selected" href="#">About</a></li>
+            </ul>
+        </nav>
+      </div> <!-- Header Close -->
+
+        <div class="aboutme">
+        <h1 class="intro">Hi, I'm Jeremy</h1>
+
+        <h2>About Me</h2>
+        <p>I’m a marketing communications designer based in Vancouver, BC. I've always been intrigued by design, even before I knew what design really was. After 5 years of design education at Kwantlen Polytechnic University, I have a better understanding now.</p>
+
+<p>Design is about the user. It's a unique experience crafted with a purpose. Design is a story, a journey — orchestrated perfectly in harmony. Design is powerful. It surrounds our lives.</p>
+
+<p>I'm on a journey to understand the world through design.</p>
+
+
+        <h2 class="contacth2">Contact</h2>
+        <p>I want to hear from you, let's get in touch.</p>
+        <div class="contactinfo">
+        <p><i class="fa fa-phone" style="font-size: 20px;margin-right:12px"></i>604.828.4879<br><i class="fa fa-envelope" style="font-size: 15px;margin-right:12px"></i><a href="mailto:hi@jerwong.ca">hi@jerwong.ca</a></p>
+      </div>
+        </div>
+
+        <div class="me">
+        <img src="projects/img/me.png" alt="Jeremy Wong - Communications Designer" width="850" height="694">
+        <a href="projects/" class="workhome">Work</a>
+      </div>
+
+      </div> <!--wrap close-->
+
+<section class="loadingpage">
+
+  <div class="loader">
+    <img src="projects/img/JWLogo.gif" alt="jerwong logo .gif" width="160" height="98">
+  <h1 class="enter">enter</h1>
+</div>
+
+
+<div class="homeinfo">
+<h1 class="jeremywong">Jeremy Wong</h1>
+<h2 class="medescriptor">Communications Designer</h2>
+</div>
+
+</section>
+
+
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script type="text/javascript" src="js/cookie.js"></script>
+
+
+        <script type="text/JavaScript">
+          $(document).ready(function() {
+            // COOKIES
+            // if the cookie is true, hide the initial message and show the other one
+            if ($.cookie('hide-after-load') == 'yes') {
+              $('.loadingpage').addClass('noshow');
+            }
+            // add cookie to hide the first message after load (on refresh it will be hidden)
+            $.cookie('hide-after-load', 'yes', {expires: 7 });
+            //reset the cookies (not shown in tutorial)
+            $('.reset').click(function() {
+              // check that if it was cliked before or not
+              if (!$(this).hasClass('clicked')) {
+                // add class that the link is clicked and shot the footer with delay
+                $(this).addClass('clicked');
+                // add cookie setting that user has clicked
+                $.cookie('hide-after-load', 'no', {expires: 7 });
+                $.cookie('hide-after-click', 'no', {expires: 7 });
+              }
+              location.reload();
+            });
+          });
+        </script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+-->
+
+    </body>
+</html>
